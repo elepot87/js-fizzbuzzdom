@@ -8,7 +8,7 @@ const row = document.querySelector("div.row");
 // Generare gli square
 
 for (let i = 1; i <= 100; i++) {
-  // inserisci nuovo square
+  // inserisci nuovo square con inner HTML
   //   row.innerHTML += `<div class=square>${i}</div>`;
 
   //   Inserisco square con append
@@ -16,7 +16,17 @@ for (let i = 1; i <= 100; i++) {
 
   div.append(`${i}`);
 
-  div.classList.add("square");
+  //   div.classList.add("square", "classic");
 
   row.append(div);
+
+  if (i % 3 == 0 && i % 5 == 0) {
+    div.classList.add("square", "fizzbuzz");
+  } else if (i % 3 == 0) {
+    div.classList.add("square", "fizz");
+  } else if (i % 5 == 0) {
+    div.classList.add("square", "buzz");
+  } else {
+    div.classList.add("square", "classic");
+  }
 }

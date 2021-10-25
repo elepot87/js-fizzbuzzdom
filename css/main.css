@@ -26,8 +26,11 @@ h1 {
 .section .row .square {
   height: 80px;
   width: 80px;
-  background-color: #1389b2;
   margin: 10px;
+}
+
+.classic {
+  background-color: #1389b2;
 }
 
 .fizz {
@@ -38,6 +41,6 @@ h1 {
   background-color: #ffd166;
 }
 
-.fizz {
+.fizzbuzz {
   background-color: #f0466f;
 }
