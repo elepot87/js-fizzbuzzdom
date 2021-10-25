@@ -16,9 +16,9 @@ for (let i = 1; i <= 100; i++) {
 
   div.append(`${i}`);
 
-  //   div.classList.add("square", "classic");
-
   row.append(div);
+
+  //   Inserisco le mie condizioni, a seconda se sono vere o false appendo una classe diversa all'elemento div
 
   if (i % 3 == 0 && i % 5 == 0) {
     div.classList.add("square", "fizzbuzz");
