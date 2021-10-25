@@ -16,7 +16,7 @@ for (let i = 1; i <= 100; i++) {
 
   row.append(div);
 
-  //   Inserisco le mie condizioni, a seconda se sono vere o false appendo una classe diversa all'elemento div
+  //   Inserisco le mie condizioni, a seconda se sono vere o false aggiungo una classe diversa all'elemento div e inserisco del contenuto testuale diverso
 
   if (i % 3 == 0 && i % 5 == 0) {
     div.classList.add("square", "fizzbuzz");
