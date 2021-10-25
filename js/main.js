@@ -14,19 +14,21 @@ for (let i = 1; i <= 100; i++) {
   //   Inserisco square con append
   let div = document.createElement("div");
 
-  div.append(`${i}`);
-
   row.append(div);
 
   //   Inserisco le mie condizioni, a seconda se sono vere o false appendo una classe diversa all'elemento div
 
   if (i % 3 == 0 && i % 5 == 0) {
     div.classList.add("square", "fizzbuzz");
+    div.append(`FizzBuzz`);
   } else if (i % 3 == 0) {
     div.classList.add("square", "fizz");
+    div.append(`Fizz`);
   } else if (i % 5 == 0) {
     div.classList.add("square", "buzz");
+    div.append(`Buzz`);
   } else {
     div.classList.add("square", "classic");
+    div.append(`${i}`);
   }
 }
