@@ -1,5 +1,6 @@
 body {
   background-color: #083b4c;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -12,13 +13,14 @@ h1 {
 
 .section {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 700px;
 }
 
 .section .row {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .section .row .square {
