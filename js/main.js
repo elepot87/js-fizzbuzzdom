@@ -3,11 +3,20 @@
 // Da 1 a 100 box nel DOM
 
 // Seleziono il contenitore degli square
-const row = document.querySelector(".row");
+const row = document.querySelector("div.row");
 
 // Generare gli square
 
 for (let i = 1; i <= 100; i++) {
   // inserisci nuovo square
-  row.innerHTML += `<div class=square>${i}</div>`;
+  //   row.innerHTML += `<div class=square>${i}</div>`;
+
+  //   Inserisco square con append
+  let div = document.createElement("div");
+
+  div.append(`${i}`);
+
+  div.classList.add("square");
+
+  row.append(div);
 }
