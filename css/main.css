@@ -1,0 +1,41 @@
+body {
+  background-color: #083b4c;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .row .square {
+  height: 80px;
+  width: 80px;
+  background-color: #1389b2;
+  margin: 10px;
+}
+
+.fizz {
+  background-color: #0ad6a1;
+}
+
+.buzz {
+  background-color: #ffd166;
+}
+
+.fizz {
+  background-color: #f0466f;
+}
